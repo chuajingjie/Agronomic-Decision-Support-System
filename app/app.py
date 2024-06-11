@@ -4,7 +4,7 @@ import joblib
 import xgboost as xgb
 
 # Load the model pipeline
-model = joblib.load('model\model_pipeline.joblib')
+model = joblib.load('model/model_pipeline.joblib')
 
 # Streamlit app layout
 st.title('Agronomic Decision Support System to Predict Optimal Fertilizer Amount')
