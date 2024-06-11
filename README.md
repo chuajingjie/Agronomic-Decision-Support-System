@@ -94,9 +94,7 @@ In theory (ignoring the fact that dummy data was used and there was no hyperpara
 
 As we now have a model that can predict optimal fertilizer amounts based on given conditions, there are two ways to provide practical recommendations to farmers:
 
-There are two ways to provide practical recommendations for farmers:
-
-- 1. General Recommendations
+#### 1. General Recommendations
 
 Using the model to recommend optimal fertiliser amount for these the following example scenarios to provide a general guide
 
@@ -106,7 +104,7 @@ Using the model to recommend optimal fertiliser amount for these the following e
 | Scenario 2 | Healthy rice with high rainfall and high soil nutrient levels  | Soil Color: reddish <br> Soil pH: 7.0 <br> Soil Nitrogen: 45.0 ppm <br> Soil Phosphorus: 50.0 ppm <br> Temperature: 30.0°C <br> Rainfall: 200.0 mm <br> Forecasted Temperature: 32.0°C <br> Forecasted Rainfall: 210.0 mm <br> Crop Type: rice <br> Plant Health: healthy     | 105.19 kg/ha                        |
 | Scenario 3 | Wilting wheat with very low nutrient levels and low rainfall   | Soil Color: light brown <br> Soil pH: 5.5 <br> Soil Nitrogen: 10.0 ppm <br> Soil Phosphorus: 10.0 ppm <br> Temperature: 25.0°C <br> Rainfall: 10.0 mm <br> Forecasted Temperature: 26.0°C <br> Forecasted Rainfall: 15.0 mm <br> Crop Type: wheat <br> Plant Health: wilting  | 136.64 kg/ha                        |
 
-- 2. Tailored Recommendations
+#### 2. Tailored Recommendations
 
 Farmers can obtain more accurate and tailored fertilizer recommendation amounts by entering their own specific data into the model.
 
