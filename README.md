@@ -1,12 +1,12 @@
 # Agronomic-Decision-Support-System
 
-### 1. Problem Formulation and Rationale
+## 1. Problem Formulation and Rationale
 
 Many farmers rely on traditional knowledge and practices to determine the amount of fertilizer to use for their crops. However, too much fertilizer can lead to soil degradation and wasted resources, while too little fertilizer can result in poor crop growth and reduced yield. This makes it challenging for farmers to achieve the optimal balance needed to maximize crop yield, reduce costs, and minimize environmental impact.
 
 The decision support system will provide recommendations based on easily obtainable data, including soil conditions, weather conditions, and crop types. Farmers can input these data into the decision support system, which will then provide real-time, tailored recommendations to help optimize fertilizer usage, achieving high crop yields while reducing costs and minimizing environmental impact.
 
-### 2. The Data Schema and Rationale for the Types of Data Chosen
+## 2. The Data Schema and Rationale for the Types of Data Chosen
 
 #### Data Schema
 
@@ -44,7 +44,7 @@ Farmers can use simple pH test kits available at agricultural supply stores to c
 | plant_health              | Provides visible indicators that help diagnose nutrient deficiencies and other issues.                                                                        |
 | optimal_fertilizer_amount | The target value that the decision support system aims to predict, helping farmers apply the right amount of fertilizer to maximize yield and minimize costs. |
 
-### 3. The Methodology Used for Data Simulation
+## 3. The Methodology Used for Data Simulation
 
 The approach to simulating the dummy data is based on using real-world typical values for soil content, weather patterns, crop type, and plant health so that the dummy data would reflect real-world conditions. This would make the dummy data useful enough to develop and test the decision support system.
 
@@ -64,7 +64,7 @@ To further simulate real-world conditions, a low percentage of outliers and miss
 | plant_health              | Common observable conditions in plants include healthy (vigorous growth), yellowing (possible nutrient deficiencies), and wilting (possible diseases) | Randomly selected as healthy, yellowing, or wilting                                              |
 | optimal_fertilizer_amount | Influenced by soil nutrients, pH, weather conditions, and crop type                                                                                   | Calculated using a simplified formula based on the input features to provide realistic estimates |
 
-### 4. Details of the Model Development Process, Including Choice of Techniques.
+## 4. Details of the Model Development Process, Including Choice of Techniques.
 
 Due to time constraints, building a full end-to-end machine learning pipeline for data cleaning, feature engineering, model training, inferencing and deployment is not feasible. Hence, the model development process is a simplified version that still aims to provide clear and actionable recommendations for optimal fertilizer usage.
 
@@ -79,3 +79,41 @@ The simplified model development process is as follows:
 4. **Making a test prediction using just one row of data.** This is to test the model's outputs, which is predicting the optimal fertilizer amount based on given conditions.
 
 5. **Saving the model to a separate folder.** This allows for the model to be reused later on.
+
+## 5. Analysis of the Model Output and Practical Recommendations for Farmers
+
+#### Model Performance
+
+The model's performance is evaluated using Root Mean Squared Error (RMSE). A lower RMSE value indicates better predictive accuracy.
+
+The RMSE of the model on the test dataset was 4.28. This indicates that, on average, the model’s predictions deviate from the actual optimal fertilizer amount by approximately 4.28 kg/ha.
+
+In theory (ignoring the fact that dummy data was used and there was no hyperparameter tuning done), this means that the model’s predicted fertilizer amounts are accurate assuming that fertilizer usage rates are usually in the range of over 100 kg/ha.
+
+#### Practical Recommendations for Farmers
+
+As we now have a model that can predict optimal fertilizer amounts based on given conditions, there are two ways to provide practical recommendations to farmers:
+
+There are two ways to provide practical recommendations for farmers:
+
+- 1. General Recommendations
+
+Using the model to recommend optimal fertiliser amount for these the following example scenarios to provide a general guide
+
+| Scenario   | Description                                                    | Conditions                                                                                                                                                                                                                                                                    | Predicted Optimal Fertilizer Amount |
+| ---------- | -------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------- |
+| Scenario 1 | Yellowing wheat with low rainfall and low soil nutrient levels | Soil Color: dark brown <br> Soil pH: 5.8 <br> Soil Nitrogen: 15.0 ppm <br> Soil Phosphorus: 20.0 ppm <br> Temperature: 25.0°C <br> Rainfall: 10.0 mm <br> Forecasted Temperature: 27.0°C <br> Forecasted Rainfall: 60.0 mm <br> Crop Type: wheat <br> Plant Health: yellowing | 132.80 kg/ha                        |
+| Scenario 2 | Healthy rice with high rainfall and high soil nutrient levels  | Soil Color: reddish <br> Soil pH: 7.0 <br> Soil Nitrogen: 45.0 ppm <br> Soil Phosphorus: 50.0 ppm <br> Temperature: 30.0°C <br> Rainfall: 200.0 mm <br> Forecasted Temperature: 32.0°C <br> Forecasted Rainfall: 210.0 mm <br> Crop Type: rice <br> Plant Health: healthy     | 105.19 kg/ha                        |
+| Scenario 3 | Wilting wheat with very low nutrient levels and low rainfall   | Soil Color: light brown <br> Soil pH: 5.5 <br> Soil Nitrogen: 10.0 ppm <br> Soil Phosphorus: 10.0 ppm <br> Temperature: 25.0°C <br> Rainfall: 10.0 mm <br> Forecasted Temperature: 26.0°C <br> Forecasted Rainfall: 15.0 mm <br> Crop Type: wheat <br> Plant Health: wilting  | 136.64 kg/ha                        |
+
+- 2. Tailored Recommendations
+
+Farmers can obtain more accurate and tailored fertilizer recommendation amounts by entering their own specific data into the model.
+
+To demonstrate how farmers might access this model, a simple web app hosting the model has been created using Streamlit. The app is deployed to the cloud and can be accessed via the following link:
+
+https://dayataniassignment.streamlit.app/
+
+## 5. A Presentation Summarizing the Project, Designed to Communicate the Findings to Both Technical and Non-technical Stakeholders
+
+The powerpoint slides summarising the project can be found in the `slides` folder of this repository
