@@ -48,7 +48,7 @@ Farmers can use simple pH test kits available at agricultural supply stores to c
 
 The approach to simulating the dummy data is based on using real-world typical values for soil content, weather patterns, crop type, and plant health so that the dummy data would reflect real-world conditions. This would make the dummy data useful enough to develop and test the decision support system.
 
-To further simulate real-world conditions, a low percentage of outliers and missing data was introducted to the dummy data, as real-world data often contains such imperfections.
+To further simulate real-world conditions, a low percentage of outliers and missing data was introduced to the dummy data, as real-world data often contains such imperfections.
 
 | Feature                   | Assumption                                                                                                                                            | Method                                                                                           |
 | ------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
@@ -94,9 +94,9 @@ In theory (ignoring the fact that dummy data was used and there was no hyperpara
 
 As we now have a model that can predict optimal fertilizer amounts based on given conditions, there are two ways to provide practical recommendations to farmers:
 
-#### 1. General Recommendations
+#### 1. General Recommendations for Pre-Defined Scenarios
 
-Using the model to recommend optimal fertiliser amount for these the following example scenarios to provide a general guide
+Use the model to recommend the optimal fertiliser amount for the following example scenarios, providing general recommendations based on pre-defined scenarios.
 
 | Scenario   | Description                                                    | Conditions                                                                                                                                                                                                                                                                    | Predicted Optimal Fertilizer Amount |
 | ---------- | -------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------- |
@@ -114,4 +114,4 @@ https://dayataniassignment.streamlit.app/
 
 ## 6. A Presentation Summarizing the Project, Designed to Communicate the Findings to Both Technical and Non-technical Stakeholders
 
-The slides (in pdf format) summarising the project can be found in the `slides` folder of this repository
+The slides summarising the project can be found in the `slides` folder of this repository
