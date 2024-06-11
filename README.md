@@ -64,7 +64,7 @@ To further simulate real-world conditions, a low percentage of outliers and miss
 | plant_health              | Common observable conditions in plants include healthy (vigorous growth), yellowing (possible nutrient deficiencies), and wilting (possible diseases) | Randomly selected as healthy, yellowing, or wilting                                              |
 | optimal_fertilizer_amount | Influenced by soil nutrients, pH, weather conditions, and crop type                                                                                   | Calculated using a simplified formula based on the input features to provide realistic estimates |
 
-## 4. Details of the Model Development Process, Including Choice of Techniques.
+## 4. Details of the Model Development Process, Including Choice of Techniques
 
 Due to time constraints, building a full end-to-end machine learning pipeline for data cleaning, feature engineering, model training, inferencing and deployment is not feasible. Hence, the model development process is a simplified version that still aims to provide clear and actionable recommendations for optimal fertilizer usage.
 
