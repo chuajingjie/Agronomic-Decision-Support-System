@@ -13,9 +13,9 @@ The decision support system will provide recommendations based on easily obtaina
 | Feature                   | Type   | Description                                                             |
 | ------------------------- | ------ | ----------------------------------------------------------------------- |
 | soil_color                | String | Qualitative measure of soil color (e.g., dark brown, reddish)           |
-| soil_pH                   | Float  | Soil pH level                                                           |
-| soil_N                    | Float  | Nitrogen content in soil (ppm)                                          |
-| soil_P                    | Float  | Phosphorus content in soil (ppm)                                        |
+| soil_ph                   | Float  | Soil pH level                                                           |
+| soil_n                    | Float  | Nitrogen content in soil (ppm)                                          |
+| soil_p                    | Float  | Phosphorus content in soil (ppm)                                        |
 | temp                      | Float  | Current temperature (°C)                                                |
 | rainfall                  | Float  | Recent rainfall (mm)                                                    |
 | forecast_temp             | Float  | Forecasted temperature (°C)                                             |
