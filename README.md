@@ -110,10 +110,10 @@ Using the model to recommend optimal fertiliser amount for these the following e
 
 Farmers can obtain more accurate and tailored fertilizer recommendation amounts by entering their own specific data into the model.
 
-To demonstrate how farmers might access this model, a simple web app hosting the model has been created using Streamlit. The app is deployed to the cloud and can be accessed via the following link:
+To demonstrate how farmers might access this model, I created a simple web app hosting the model using Streamlit. The app is deployed to the cloud and can be accessed via the following link:
 
 https://dayataniassignment.streamlit.app/
 
-## 5. A Presentation Summarizing the Project, Designed to Communicate the Findings to Both Technical and Non-technical Stakeholders
+## 6. A Presentation Summarizing the Project, Designed to Communicate the Findings to Both Technical and Non-technical Stakeholders
 
-The powerpoint slides summarising the project can be found in the `slides` folder of this repository
+The slides (in pdf format) summarising the project can be found in the `slides` folder of this repository
