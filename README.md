@@ -48,6 +48,8 @@ Farmers can use simple pH test kits available at agricultural supply stores to c
 
 The approach to simulating the dummy data is based on using real-world typical values for soil content, weather patterns, crop type, and plant health so that the dummy data would reflect real-world conditions. This would make the dummy data useful enough to develop and test the decision support system.
 
+To further simulate real-world conditions, a low percentage of outliers and missing data was introducted to the dummy data, as real-world data often contains such imperfections.
+
 | Feature                   | Assumption                                                                                                                                            | Method                                                                                           |
 | ------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
 | soil_color                | Mimics common soil color ranges                                                                                                                       | Randomly chosen from dark brown, reddish, light brown                                            |
@@ -61,3 +63,19 @@ The approach to simulating the dummy data is based on using real-world typical v
 | crop_type                 | Common crops grown in Indonesia include wheat, corn, and rice, which have distinct growing requirements and nutrient needs                            | Randomly selected from wheat, corn, and rice                                                     |
 | plant_health              | Common observable conditions in plants include healthy (vigorous growth), yellowing (possible nutrient deficiencies), and wilting (possible diseases) | Randomly selected as healthy, yellowing, or wilting                                              |
 | optimal_fertilizer_amount | Influenced by soil nutrients, pH, weather conditions, and crop type                                                                                   | Calculated using a simplified formula based on the input features to provide realistic estimates |
+
+4. Details of the Model Development Process, Including Choice of Techniques.
+
+Due to time constraints, building a full end-to-end machine learning pipeline for data cleaning, feature engineering, model training, inferencing and deployment is not feasible. Hence, the model development process is a simplified version that still aims to provide clear and actionable recommendations for optimal fertilizer usage.
+
+The simplified model development process is as follows:
+
+1. **Splitting the dummy data into train and test sets using `train_test_split` from `scikit-learn`.** 67% train and 33% test proportion.
+
+2. **Using `Pipeline` from `scikit-learn` to simplify the rest of the preprocessing steps.** This ensures that the same preprocessing steps are applied to both the training and test sets to prevent data leakage when training the model. The missing values are filled with the median, numeric outliers are scaled, and categorical values are encoded to numerical values.
+
+3. **Training the `XGBRegressor` model with the processed training dataset.** The model is then used to make predictions on the test dataset, and the Root Mean Squared Error (RMSE) is calculated to determine the model’s prediction accuracy.
+
+4. **Making a test prediction using just one row of data.** This is to test the model's outputs, which is predicting the optimal fertilizer amount based on given conditions.
+
+5. **Saving the model to a separate folder.** This allows for the model to be reused later on.
