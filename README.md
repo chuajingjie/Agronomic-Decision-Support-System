@@ -110,7 +110,7 @@ Use the model to recommend the optimal fertiliser amount for the following examp
 | Scenario 2 | Healthy rice with high rainfall and high soil nutrient levels  | Soil Color: reddish <br> Soil pH: 7.0 <br> Soil Nitrogen: 45.0 ppm <br> Soil Phosphorus: 50.0 ppm <br> Temperature: 30.0°C <br> Rainfall: 200.0 mm <br> Forecasted Temperature: 32.0°C <br> Forecasted Rainfall: 210.0 mm <br> Crop Type: rice <br> Plant Health: healthy     | 105.19 kg/ha                        |
 | Scenario 3 | Wilting wheat with very low nutrient levels and low rainfall   | Soil Color: light brown <br> Soil pH: 5.5 <br> Soil Nitrogen: 10.0 ppm <br> Soil Phosphorus: 10.0 ppm <br> Temperature: 25.0°C <br> Rainfall: 10.0 mm <br> Forecasted Temperature: 26.0°C <br> Forecasted Rainfall: 15.0 mm <br> Crop Type: wheat <br> Plant Health: wilting  | 136.64 kg/ha                        |
 
-The code to generate these predictions for pre-defined scenarios can be found in in [notebook\3_model_findings_and_recommendations.ipynb](notebook\3_model_findings_and_recommendations.ipynb) of the repository.
+The code to generate these predictions for pre-defined scenarios can be found in in `notebook\3_model_findings_and_recommendations.ipynb`
 
 #### 2. Tailored Recommendations
 
