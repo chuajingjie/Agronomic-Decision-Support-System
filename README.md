@@ -86,6 +86,8 @@ The simplified model development process is as follows:
 
 The code written to develop the model can be found in `notebook\2_model_development.ipynb`
 
+The model (including the pipeline) is saved at `model\model_pipeline.joblib`
+
 ## 5. Analysis of the Model Output and Practical Recommendations for Farmers
 
 #### Model Performance
