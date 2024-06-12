@@ -64,6 +64,10 @@ To further simulate real-world conditions, a low percentage of outliers and miss
 | plant_health              | Common observable conditions in plants include healthy (vigorous growth), yellowing (possible nutrient deficiencies), and wilting (possible diseases) | Randomly selected as healthy, yellowing, or wilting                                              |
 | optimal_fertilizer_amount | Influenced by soil nutrients, pH, weather conditions, and crop type                                                                                   | Calculated using a simplified formula based on the input features to provide realistic estimates |
 
+The code to generate the dummy data can be found in [notebook\1_generate_dummy_data.ipynb](notebook\1_generate_dummy_data.ipynb) of the repository.
+
+The csv containing the dummy data is saved in [data\dummy_data.csv](data\dummy_data.csv) of the repository.
+
 ## 4. Details of the Model Development Process, Including Choice of Techniques
 
 Due to time constraints, building a full end-to-end machine learning pipeline for data cleaning, feature engineering, model training, inferencing and deployment is not feasible. Hence, the model development process is a simplified version that still aims to provide clear and actionable recommendations for optimal fertilizer usage.
@@ -79,6 +83,8 @@ The simplified model development process is as follows:
 4. **Making a test prediction using just one row of data.** This is to test the model's outputs, which is predicting the optimal fertilizer amount based on given conditions.
 
 5. **Saving the model to a separate folder.** This allows for the model to be reused later on.
+
+The code written to develop the model can be found in [notebook\2_model_development.ipynb](notebook\2_model_development.ipynb) of the repository.
 
 ## 5. Analysis of the Model Output and Practical Recommendations for Farmers
 
@@ -104,6 +110,8 @@ Use the model to recommend the optimal fertiliser amount for the following examp
 | Scenario 2 | Healthy rice with high rainfall and high soil nutrient levels  | Soil Color: reddish <br> Soil pH: 7.0 <br> Soil Nitrogen: 45.0 ppm <br> Soil Phosphorus: 50.0 ppm <br> Temperature: 30.0°C <br> Rainfall: 200.0 mm <br> Forecasted Temperature: 32.0°C <br> Forecasted Rainfall: 210.0 mm <br> Crop Type: rice <br> Plant Health: healthy     | 105.19 kg/ha                        |
 | Scenario 3 | Wilting wheat with very low nutrient levels and low rainfall   | Soil Color: light brown <br> Soil pH: 5.5 <br> Soil Nitrogen: 10.0 ppm <br> Soil Phosphorus: 10.0 ppm <br> Temperature: 25.0°C <br> Rainfall: 10.0 mm <br> Forecasted Temperature: 26.0°C <br> Forecasted Rainfall: 15.0 mm <br> Crop Type: wheat <br> Plant Health: wilting  | 136.64 kg/ha                        |
 
+The code to generate these predictions for pre-defined scenarios can be found in in [notebook\3_model_findings_and_recommendations.ipynb](notebook\3_model_findings_and_recommendations.ipynb) of the repository.
+
 #### 2. Tailored Recommendations
 
 Farmers can obtain more accurate and tailored fertilizer recommendation amounts by entering their own specific data into the model.
@@ -112,6 +120,8 @@ To demonstrate how farmers might access this model, I created a simple web app h
 
 https://dayataniassignment.streamlit.app/
 
+The code for the web app can be found in [app\app.py](app\app.py) of the repository.
+
 ## 6. A Presentation Summarizing the Project, Designed to Communicate the Findings to Both Technical and Non-technical Stakeholders
 
-The slides summarising the project can be found in the `slides` folder of this repository
+The PDF slides summarising the project can be found in [slides\presentation_jingjie.pdf](slides\presentation_jingjie.pdf) of the repository
