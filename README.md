@@ -64,9 +64,9 @@ To further simulate real-world conditions, a low percentage of outliers and miss
 | plant_health              | Common observable conditions in plants include healthy (vigorous growth), yellowing (possible nutrient deficiencies), and wilting (possible diseases) | Randomly selected as healthy, yellowing, or wilting                                              |
 | optimal_fertilizer_amount | Influenced by soil nutrients, pH, weather conditions, and crop type                                                                                   | Calculated using a simplified formula based on the input features to provide realistic estimates |
 
-The code to generate the dummy data can be found in [notebook\1_generate_dummy_data.ipynb](notebook\1_generate_dummy_data.ipynb) of the repository.
+The code to generate the dummy data can be found in `notebook\1_generate_dummy_data.ipynb`
 
-The csv containing the dummy data is saved in [data\dummy_data.csv](data\dummy_data.csv) of the repository.
+The csv containing the dummy data is saved in `data\dummy_data.csv`
 
 ## 4. Details of the Model Development Process, Including Choice of Techniques
 
@@ -84,7 +84,7 @@ The simplified model development process is as follows:
 
 5. **Saving the model to a separate folder.** This allows for the model to be reused later on.
 
-The code written to develop the model can be found in [notebook\2_model_development.ipynb](notebook\2_model_development.ipynb) of the repository.
+The code written to develop the model can be found in `notebook\2_model_development.ipynb`
 
 ## 5. Analysis of the Model Output and Practical Recommendations for Farmers
 
@@ -120,8 +120,8 @@ To demonstrate how farmers might access this model, I created a simple web app h
 
 https://dayataniassignment.streamlit.app/
 
-The code for the web app can be found in [app\app.py](app\app.py) of the repository.
+The code for the web app can be found in `app\app.py`
 
 ## 6. A Presentation Summarizing the Project, Designed to Communicate the Findings to Both Technical and Non-technical Stakeholders
 
-The PDF slides summarising the project can be found in [slides\presentation_jingjie.pdf](slides\presentation_jingjie.pdf) of the repository
+The PDF slides summarising the project can be found in `slides\presentation_jingjie.pdf`
